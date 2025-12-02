@@ -188,7 +188,7 @@ Windows 11, latest version
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: '[Quest Sample] It doesn\'t work',
+              title: "[Quest Sample] It doesn't work",
               body: `When I try to use it, it doesn't work.
 
 ---
