@@ -543,4 +543,4 @@ After completing your audit report, you'll move to **Task 1.4** where you'll use
 
 ---
 
-**Need help?** Check [solutions/solution-1.3-report.md](../solutions/solution-1.3-report.md) for example Copilot-generated reports.
+**Ready for the next step?** Continue to [Task 1.4: Create Documentation Standards](task-1.4-standards.md).

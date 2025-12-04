@@ -772,14 +772,6 @@ Congratulations! By completing all four tasks in Scenario 1, you have:
 
 ## What's Next?
 
-Ready for more? Move to **[Scenario 2: The Big Merge](../../scenario-2-big-merge/README.md)**
+Ready for more? Move to **[Scenario 2: The Backlog Battle](../../scenario-2-backlog-battle/README.md)**
 
-You'll learn to use GitHub Copilot's PR features including:
-- GitHub's native PR summary feature
-- Inline review suggestions
-- Cross-file impact analysis
-- Automated feedback generation
-
----
-
-**Need help?** Check [solutions/solution-1.4-standards.md](../solutions/solution-1.4-standards.md) for example Copilot-generated standards documents.
+You'll learn to use GitHub Copilot to efficiently triage and manage documentation issues at scale.

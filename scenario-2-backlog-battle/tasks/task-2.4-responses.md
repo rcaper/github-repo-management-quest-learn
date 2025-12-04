@@ -392,7 +392,7 @@ Thanks for keeping our docs current!
 **Morning (1 hour):**
 - [ ] Close 3 duplicate issues with responses
 - [ ] Close 2 out-of-scope issues with responses
-- [ ] Label all 25 issues with type/priority/component
+- [ ] Label all issues with type/priority/component
 
 **Afternoon (1 hour):**
 - [ ] Send 4 information requests
@@ -497,7 +497,7 @@ Ready to execute? Follow this checklist:
 - [ ] Set up project board with columns (Triage, Quick Win, In Progress, Done)
 
 ### Day 1 Execution (2 hours)
-- [ ] Label all 25 issues
+- [ ] Label all issues
 - [ ] Post all prepared responses
 - [ ] Close duplicates and out-of-scope
 - [ ] Send information requests
@@ -626,4 +626,4 @@ Take these skills and apply them to your own repositories:
 
 ---
 
-**Need the solution?** Check [solutions/solution-3.4-responses.md](../solutions/solution-3.4-responses.md)
+🎉 **Congratulations!** You've completed Scenario 2 - Issue Triage. Ready to continue? Move to **[Scenario 3: The Big Merge](../../scenario-3-big-merge/README.md)** to learn PR review techniques!

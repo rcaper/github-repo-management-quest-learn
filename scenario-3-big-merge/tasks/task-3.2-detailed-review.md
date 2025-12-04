@@ -759,4 +759,4 @@ After completing detailed review, move to **Task 2.3** where you'll use GitHub C
 
 ---
 
-**Need help?** Check [solutions/solution-2.2-detailed-review.md](../solutions/solution-2.2-detailed-review.md) for example review outputs.
+**Ready for the next step?** Continue to [Task 3.3: Generate Feedback](task-3.3-feedback-generation.md).

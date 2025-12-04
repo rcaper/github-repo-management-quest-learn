@@ -15,15 +15,15 @@ Ensure your workspace configuration is robust, consistent, and ready for real-wo
 Run the same query with different agents and compare results:
 
 ```
-@documentation-auditor Analyze the structure of scenario-1-inheritance/challenge-repo
+@documentation-auditor Analyze the structure of learn-pr/wwl/get-started-lakehouses
 ```
 
 ```
-@style-enforcer Analyze the structure of scenario-1-inheritance/challenge-repo
+@style-enforcer Analyze the structure of learn-pr/wwl/get-started-lakehouses
 ```
 
 ```
-@link-checker Analyze the structure of scenario-1-inheritance/challenge-repo
+@link-checker Analyze the structure of learn-pr/wwl/get-started-lakehouses
 ```
 
 **Questions to consider:**
@@ -36,15 +36,15 @@ Run the same query with different agents and compare results:
 Use the same prompt on different content types:
 
 ```
-#content-audit scenario-1-inheritance/README.md
+#content-audit learn-pr/wwl/get-started-lakehouses/index.yml
 ```
 
 ```
-#content-audit scenario-2-big-merge/README.md
+#content-audit learn-pr/wwl/describe-medallion-architecture/index.yml
 ```
 
 ```
-#content-audit README.md
+#content-audit learn-pr/wwl/introduction-to-copilot-fabric/index.yml
 ```
 
 **Questions to consider:**

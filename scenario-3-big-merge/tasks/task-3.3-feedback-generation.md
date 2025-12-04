@@ -734,4 +734,4 @@ When commenting on actual PRs on GitHub.com:
 
 ---
 
-**Need help?** Check [solutions/solution-2.3-feedback.md](../solutions/solution-2.3-feedback.md) for example Copilot-generated feedback.
+**Ready for the next step?** Continue to [Task 3.4: Final Validation](task-3.4-final-validation.md).

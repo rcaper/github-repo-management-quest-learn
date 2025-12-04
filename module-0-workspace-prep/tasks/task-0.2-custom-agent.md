@@ -38,11 +38,11 @@ link-checker:
 Try your new agent with these commands:
 
 ```
-@link-checker Please analyze all links in the scenario-1-inheritance/challenge-repo directory
+@link-checker Please analyze all links in the learn-pr/wwl/get-started-lakehouses directory
 ```
 
 ```
-@link-checker Check this file for link issues: scenario-1-inheritance/challenge-repo/README.md
+@link-checker Check this file for link issues: learn-pr/wwl/introduction-to-copilot-fabric/index.yml
 ```
 
 ## Step 3: Refine and Optimize

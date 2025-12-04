@@ -101,7 +101,7 @@ Option B - Download ZIP:
 
 In order to get the workflows working, you will need to do one of two things:
 
-1. Create a Personal Access Token under Profile > Settings > Developer Settings > Personal Access Tokens > Fine Grained Tokens > Generate new token > "Repository Access" > "Only select repositories" > Add permissions (Actions, Workflows, Pull Requests). Then use `github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}`
+1. Make sure that your repo is Public so that you can use the default `github-token: ${{ secrets.GITHUB_TOKEN }}`. **OR** Create a Personal Access Token under Profile > Settings > Developer Settings > Personal Access Tokens > Fine Grained Tokens > Generate new token > "Repository Access" > "Only select repositories" > Add permissions (Actions, Workflows, Pull Requests). Then use `github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}`
 1. Repository settings > Actions > General > "Workflow Permissions" > "Allow GitHub Actions to create and approve pull requests. Then use `github-token: ${{ secrets.GITHUB_TOKEN }}`
 
 **Step 3: Start the Quest**
@@ -566,7 +566,7 @@ We won't have time to complete it, but let's explore it...
 **2:25-2:40 - Scenario 3 Quick Demo (15 min)**
 
 **Show Rather Than Do:**
-1. Show the 27-issue backlog in issues/ALL_ISSUES.md
+1. Show the issue backlog in the repository's Issues tab (filter by `quest-sample` label)
 2. Demonstrate bulk categorization with AI (live)
 3. Show example outputs from tasks
 4. Highlight key templates created
@@ -574,7 +574,7 @@ We won't have time to complete it, but let's explore it...
 **Key Points:**
 ```
 With AI, you can:
-- Categorize 25+ issues in minutes
+- Categorize issues in minutes
 - Find duplicates automatically
 - Create professional issue templates
 - Draft responses at scale

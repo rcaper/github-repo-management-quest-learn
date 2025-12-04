@@ -128,7 +128,7 @@ Test each prompt with relevant content:
 
 1. **Quick fixes prompt:**
    ```
-   #quick-fixes Please analyze: scenario-1-inheritance/challenge-repo/docs/getting-started.md
+   #quick-fixes Please analyze: learn-pr/wwl/get-started-lakehouses/includes/1-introduction.md
    ```
 
 2. **Issue analysis prompt:**
@@ -138,7 +138,7 @@ Test each prompt with relevant content:
 
 3. **Create checklist prompt:**
    ```
-   #create-checklist Create a documentation review checklist based on our repository standards
+   #create-checklist Create a documentation review checklist for Microsoft Learn modules based on the learn-pr/wwl structure
    ```
 
 ## Step 4: Create Your Own Prompts

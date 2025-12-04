@@ -17,7 +17,7 @@ Your manager walks by:
 
 > "Hey, I noticed we have a lot of open documentation issues. The product team is asking about them. Can you triage the backlog and create a plan? We need to show we're on top of this. Also, let's set up some templates and processes so this doesn't happen again."
 
-**Your mission:** Efficiently triage and categorize 25+ issues, create response strategies, establish templates and processes, and develop a sustainable issue management workflow.
+**Your mission:** Efficiently triage and categorize the issues, create response strategies, establish templates and processes, and develop a sustainable issue management workflow.
 
 ## Scenario Overview
 
@@ -57,7 +57,7 @@ Before starting this scenario, ensure the sample issues have been created by run
 ### Task 2.1: Issue Categorization and Prioritization (15 minutes)
 **File:** [tasks/task-2.1-categorize.md](tasks/task-2.1-categorize.md)
 
-Use AI to quickly categorize all 25 issues by:
+Use AI to quickly categorize all issues by:
 - Type (bug, feature, question, discussion, typo)
 - Priority (critical, high, medium, low)
 - Effort (quick-win, medium, large)
@@ -141,7 +141,7 @@ Group similar issues and handle them together:
 
 You've successfully completed this scenario when you:
 
-- ✅ Categorized all 25 issues by type, priority, and effort
+- ✅ Categorized all issues by type, priority, and effort
 - ✅ Identified at least 2 duplicates or related issue groups
 - ✅ Created 3-5 issue templates for common types
 - ✅ Established a label system and triage process

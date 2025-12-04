@@ -158,11 +158,11 @@ generate-summary:
 Try these commands in Copilot Chat:
 
 ```
-@documentation-auditor Please analyze the structure of the scenario-1-inheritance/challenge-repo directory
+@documentation-auditor Please analyze the structure of the learn-pr/wwl folder
 ```
 
 ```
-@style-enforcer Review the README.md file in the repository root for style consistency
+@style-enforcer Review the learn-pr/wwl/get-started-lakehouses/index.yml file for style consistency
 ```
 
 ### Test Your Prompts
@@ -170,11 +170,11 @@ Try these commands in Copilot Chat:
 Try these commands in Copilot Chat:
 
 ```
-#content-audit @workspace
+#content-audit @workspace Analyze the learn-pr/wwl folder
 ```
 
 ```
-#style-check Please review this file: scenario-1-inheritance/README.md
+#style-check Please review this file: learn-pr/wwl/describe-medallion-architecture/index.yml
 ```
 
 ## Step 3: Understanding the Results

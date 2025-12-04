@@ -203,7 +203,7 @@ template-selector:
 Implement template selection automation:
 
 ```
-#template-selector @workspace Create an automated template selection system for all quest-sample issues
+#template-selector @github Create an automated template selection system for all quest-sample issues
 ```
 
 ## Step 6: Template Quality Assurance

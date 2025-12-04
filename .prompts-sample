@@ -1,0 +1,73 @@
+content-audit:
+  description: Comprehensive analysis of repository content and structure
+  prompt: |
+    Please analyze this repository's documentation with focus on:
+    
+    **Content Analysis:**
+    - Overall structure and organization
+    - Completeness of information
+    - Content gaps or missing sections
+    - Outdated or inaccurate information
+    
+    **User Experience:**
+    - Navigation and findability
+    - Clarity of instructions
+    - Appropriate depth for target audience
+    - Logical flow and sequencing
+    
+    **Technical Quality:**
+    - Link validity and accuracy
+    - Code example functionality
+    - Prerequisites and setup clarity
+    - Cross-references and consistency
+    
+    Provide a structured report with:
+    1. Executive summary
+    2. Key findings (prioritized)
+    3. Specific recommendations
+    4. Quick wins for immediate improvement
+
+style-check:
+  description: Review content for style consistency and quality
+  prompt: |
+    Review the provided content for:
+    
+    **Style Consistency:**
+    - Grammar, spelling, and punctuation
+    - Consistent terminology usage
+    - Appropriate tone and voice
+    - Proper markdown formatting
+    
+    **Quality Factors:**
+    - Clarity and conciseness
+    - Logical organization
+    - Accessibility compliance
+    - Professional presentation
+    
+    **Output Format:**
+    1. Overall assessment (1-10 score)
+    2. Specific issues found (with line references if applicable)
+    3. Suggested improvements
+    4. Style guide recommendations
+
+generate-summary:
+  description: Create executive summaries of content or changes
+  prompt: |
+    Create a comprehensive summary of the provided content including:
+    
+    **Key Information:**
+    - Main topics and themes
+    - Important facts or data points
+    - Key takeaways or conclusions
+    
+    **Structure:**
+    - Logical organization of information
+    - Relationships between topics
+    - Priority or importance ranking
+    
+    **Actionable Items:**
+    - Decisions that need to be made
+    - Next steps or follow-up actions
+    - Areas requiring attention
+    
+    Format as a clear, executive-level summary suitable for stakeholder review.

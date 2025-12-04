@@ -2,7 +2,7 @@
 
 **Duration:** 15 minutes
 **Difficulty:** Intermediate
-**GitHub Copilot Features:** @workspace, semantic similarity analysis, pattern recognition
+**GitHub Copilot Features:** @github for issue analysis, @workspace for files, semantic similarity analysis, pattern recognition
 
 ## Objective
 
@@ -10,7 +10,7 @@ Use GitHub Copilot to identify duplicate issues, find related issues that should
 
 ## Context
 
-In a backlog of 27 issues, manually finding duplicates and relationships requires:
+In a backlog of issues, manually finding duplicates and relationships requires:
 - Reading each issue multiple times
 - Remembering details from earlier issues
 - Comparing symptoms, requests, and contexts
@@ -41,7 +41,7 @@ This could take 2-3 hours manually. GitHub Copilot can compare all issues simult
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Analyze all 27 issues in ALL_ISSUES.md to find exact duplicates.
+@github Analyze all issues with the quest-sample label to find exact duplicates.
 
 Look for issues that:
 1. Report the same problem
@@ -68,7 +68,7 @@ Focus on semantic similarity, not just exact word matches. If two issues describ
 **Example Prompt for Specific Comparison:**
 
 ```
-@workspace Are issues #1 and #13 duplicates? Compare their descriptions and determine if they're reporting the same problem.
+@github Are issues #1 and #13 duplicates? Compare their descriptions and determine if they're reporting the same problem.
 ```
 
 **Deliverable:** Create `issue-relationships.md` with "Exact Duplicates" section
@@ -80,7 +80,7 @@ Focus on semantic similarity, not just exact word matches. If two issues describ
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Find groups of related issues that aren't exact duplicates but are connected.
+@github Find groups of related issues that aren't exact duplicates but are connected.
 
 Look for issues that:
 1. Share the same root cause (different symptoms, same underlying problem)
@@ -146,7 +146,7 @@ Present as groups with clear relationships.
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Identify issues that conflict with each other—where users are requesting opposite or incompatible things.
+@github Identify issues that conflict with each other—where users are requesting opposite or incompatible things.
 
 Look for:
 1. Feature requests that contradict each other
@@ -216,7 +216,7 @@ Make auto-updates configurable with sensible default:
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Identify dependencies between issues—where one issue blocks or depends on another.
+@github Identify dependencies between issues—where one issue blocks or depends on another.
 
 Look for:
 1. Issues that can't be fixed until another is resolved
@@ -243,7 +243,7 @@ Create a dependency graph showing the relationships.
 **Ask for Visual Representation:**
 
 ```
-@workspace Create a Mermaid diagram showing issue dependencies. Use arrows to show "blocks" relationships.
+@github Create a Mermaid diagram showing issue dependencies. Use arrows to show "blocks" relationships.
 ```
 
 **Example Output:**
@@ -293,7 +293,7 @@ graph TD
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Based on the related issues and themes, recommend which groups should become "epic" issues.
+@github Based on the related issues and themes, recommend which groups should become "epic" issues.
 
 An epic is a parent issue that encompasses multiple related smaller issues.
 
@@ -401,7 +401,7 @@ Closes #3, #7, #15, #19, #24
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace For each duplicate issue we identified, draft a kind and helpful closing comment.
+@github For each duplicate issue we identified, draft a kind and helpful closing comment.
 
 The comment should:
 1. Thank the reporter for reporting
@@ -463,7 +463,7 @@ Closes as duplicate of #10
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace For all the related issues we've identified, create a plan for cross-referencing them.
+@github For all the related issues we've identified, create a plan for cross-referencing them.
 
 Provide:
 1. Which issues should reference which (specific issue pairs)
@@ -582,8 +582,8 @@ Your `issue-relationships.md` should include:
 
 **Analyst:** [Your Name]
 **Date:** [Date]
-**Analyzed with:** GitHub Copilot @workspace
-**Total Issues Analyzed:** 27
+**Analyzed with:** GitHub Copilot @github
+**Total Issues Analyzed:** 12
 
 ---
 
@@ -908,14 +908,14 @@ graph TD
 
 ## Copilot Queries Used
 
-Most helpful @workspace queries:
+Most helpful queries:
 
-1. `@workspace Find exact duplicates among all 27 issues`
-2. `@workspace Group related issues that share common themes`
-3. `@workspace Identify conflicting requests where users want opposite things`
-4. `@workspace Map issue dependencies - what blocks what?`
-5. `@workspace Which groups of issues should become epics?`
-6. `@workspace Draft closing comments for duplicate issues`
+1. `@github Find exact duplicates among all issues with quest-sample label`
+2. `@github Group related issues that share common themes`
+3. `@github Identify conflicting requests where users want opposite things`
+4. `@github Map issue dependencies - what blocks what?`
+5. `@github Which groups of issues should become epics?`
+6. `@github Draft closing comments for duplicate issues`
 
 ---
 
@@ -931,7 +931,7 @@ Most helpful @workspace queries:
 **Ask Copilot to compare semantically:**
 
 ```
-@workspace Are these describing the same problem even if worded differently?
+@github Are these describing the same problem even if worded differently?
 ```
 
 Copilot can understand that "installation fails" and "can't install" are the same thing.
@@ -941,8 +941,8 @@ Copilot can understand that "installation fails" and "can't install" are the sam
 **Look for patterns:**
 
 ```
-@workspace What common themes emerge across these issues?
-@workspace Which issues share the same root cause?
+@github What common themes emerge across these issues?
+@github Which issues share the same root cause?
 ```
 
 ### Detecting Conflicts
@@ -950,7 +950,7 @@ Copilot can understand that "installation fails" and "can't install" are the sam
 **Ask explicitly:**
 
 ```
-@workspace Do any issues contradict each other or request opposite things?
+@github Do any issues contradict each other or request opposite things?
 ```
 
 ### Visual Representations
@@ -958,7 +958,7 @@ Copilot can understand that "installation fails" and "can't install" are the sam
 **Request diagrams:**
 
 ```
-@workspace Create a Mermaid diagram showing issue relationships
+@github Create a Mermaid diagram showing issue relationships
 ```
 
 ---
@@ -991,8 +991,8 @@ You've completed this task when you:
 
 ## What's Next?
 
-After identifying relationships, move to **Task 3.3** where you'll use GitHub Copilot to create issue templates and response templates to improve future issue quality.
+After identifying relationships, move to **Task 2.3** where you'll use GitHub Copilot to create issue templates and response templates to improve future issue quality.
 
 ---
 
-**Need help?** Check [solutions/solution-3.2-duplicates.md](../solutions/solution-3.2-duplicates.md) for example outputs.
+**Ready for the next step?** Continue to [Task 2.3: Create Issue Templates](task-2.3-templates.md).

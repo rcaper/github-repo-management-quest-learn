@@ -648,4 +648,4 @@ After completing your high-level review, you'll move to **Task 2.2** where you'l
 
 ---
 
-**Need help?** Check [solutions/solution-2.1-initial-review.md](../solutions/solution-2.1-initial-review.md) for example Copilot interactions and expected outputs.
+**Ready for the next step?** Continue to [Task 3.2: Detailed Content Review](task-3.2-detailed-review.md).

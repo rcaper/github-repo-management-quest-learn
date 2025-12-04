@@ -864,4 +864,4 @@ You'll learn to use GitHub Copilot for:
 
 ---
 
-**Need help?** Check [solutions/solution-2.4-final-validation.md](../solutions/solution-2.4-final-validation.md) for example outputs.
+🎉 **Congratulations!** You've completed Scenario 3 - The Big Merge. Ready to continue? Move to **[Scenario 4: Agent Arsenal](../../scenario-4-agent-arsenal/README.md)** to learn advanced GitHub Copilot agent techniques!

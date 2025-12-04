@@ -1134,10 +1134,10 @@ You've completed this task when you:
 
 Congratulations! You've completed all issue management tasks:
 
-- ✅ Task 3.1: Bulk categorized 27 issues with Copilot
-- ✅ Task 3.2: Found duplicates and relationships
-- ✅ Task 3.3: Created templates to prevent future chaos
-- ✅ Task 3.4: Automated fixes with issue-to-PR workflow
+- ✅ Task 2.1: Bulk categorized issues with Copilot
+- ✅ Task 2.2: Found duplicates and relationships
+- ✅ Task 2.3: Created templates to prevent future chaos
+- ✅ Task 2.4: Automated fixes with issue-to-PR workflow
 
 **You've learned GitHub Copilot's most powerful repo management features!**
 
@@ -1162,4 +1162,4 @@ You've completed **all three scenarios** of the GitHub Copilot Repository Manage
 
 ---
 
-**Need help?** Check [solutions/solution-3.4-automated-fixes.md](../solutions/solution-3.4-automated-fixes.md) for detailed examples.
+🎉 **Congratulations!** You've completed the automated fixes task. Ready to continue? Move to **[Scenario 3: The Big Merge](../../scenario-3-big-merge/README.md)** to learn PR review techniques!

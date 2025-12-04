@@ -845,11 +845,11 @@ Track these metrics to measure value:
 Without Copilot:
 - PR review: 45 minutes average
 - Issue triage: 5 minutes per issue
-- Finding duplicates: 2-3 hours for 27 issues
+- Finding duplicates: 2-3 hours for many issues
 
 With Copilot:
 - PR review: 15-20 minutes (55% reduction)
-- Issue triage: 15 minutes for all 27 (94% reduction)
+- Issue triage: 15 minutes for all issues (94% reduction)
 - Finding duplicates: 15 minutes (90% reduction)
 ```
 

@@ -86,7 +86,7 @@ Use your triage agent to process all sample issues:
 Use your **rapid-issue-triage** prompt for efficient processing:
 
 ```
-#rapid-issue-triage @workspace Process all open issues using fast-track triage protocol:
+#rapid-issue-triage @github Process all open issues using fast-track triage protocol:
 - Identify duplicates for immediate closure
 - Flag critical issues requiring immediate attention
 - Batch similar issues for efficient processing

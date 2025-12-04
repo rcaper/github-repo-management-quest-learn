@@ -1209,4 +1209,4 @@ After creating templates to prevent future chaos, move to **Task 3.4** where you
 
 ---
 
-**Need help?** Check [solutions/solution-3.3-templates.md](../solutions/solution-3.3-templates.md) for example templates.
+Ready to continue? Move to **[Task 2.4: Automated Fixes](task-2.4-automated-fixes.md)** to learn how to automatically fix simple issues using GitHub Copilot!

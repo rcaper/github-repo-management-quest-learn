@@ -2,11 +2,11 @@
 
 **Duration:** 20 minutes
 **Difficulty:** Intermediate
-**GitHub Copilot Features:** @workspace, bulk analysis, pattern recognition
+**GitHub Copilot Features:** @github for issue analysis, @workspace for repository files, bulk analysis, pattern recognition
 
 ## Objective
 
-Use GitHub Copilot to quickly categorize, prioritize, and analyze a backlog of 27 GitHub issues, identifying patterns, priorities, and relationships that would take hours to identify manually.
+Use GitHub Copilot to quickly categorize, prioritize, and analyze a backlog of GitHub issues, identifying patterns, priorities, and relationships that would take hours to identify manually.
 
 ## Context
 
@@ -45,7 +45,8 @@ This task shows you how to use Copilot's bulk analysis capabilities to bring ord
 2. **VS Code with Copilot Chat:**
    - Open your repository in VS Code
    - Press `Ctrl+Shift+I` (Cmd+Shift+I on Mac)
-   - Use @workspace to analyze issues across the repository
+   - Use @github to analyze issues in the repository
+   - Use @workspace to analyze files in the repository
 
 ## Tasks
 
@@ -54,7 +55,7 @@ This task shows you how to use Copilot's bulk analysis capabilities to bring ord
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Analyze all issues in the ALL_ISSUES.md file.
+@github Analyze all open issues in this repository with the quest-sample label.
 
 Provide a complete overview:
 
@@ -81,7 +82,7 @@ Present as a summary with counts and percentages.
 ```
 
 **What Copilot Does:**
-- Reads all 27 issues
+- Reads all issues with the quest-sample label
 - Categorizes each one
 - Identifies patterns
 - Provides statistical overview
@@ -95,7 +96,7 @@ Present as a summary with counts and percentages.
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Categorize all 27 issues from ALL_ISSUES.md into a detailed table.
+@github Categorize all issues with the quest-sample label into a detailed table.
 
 For each issue, determine:
 
@@ -139,11 +140,11 @@ Sort by priority (P0 first), then by effort (smallest first within each priority
 **Follow-up to Refine:**
 
 ```
-@workspace For the P0 issues, explain WHY you rated them as critical priority.
+@github For the P0 issues, explain WHY you rated them as critical priority.
 ```
 
 ```
-@workspace For the XL effort issues, explain what makes them complex.
+@github For the XL effort issues, explain what makes them complex.
 ```
 
 **Deliverable:** Add "Complete Issue Categorization" section with comprehensive table
@@ -155,7 +156,7 @@ Sort by priority (P0 first), then by effort (smallest first within each priority
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace From the 27 issues, identify "quick wins" - issues that:
+@github From the issues with the quest-sample label, identify "quick wins" - issues that:
 - Are high value (user-facing problems or popular requests)
 - Require low effort (XS or S)
 - Have clear solutions
@@ -186,7 +187,7 @@ Rank by value/effort ratio (biggest bang for buck first).
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Group all 27 issues by common themes or topics.
+@github Group all issues with the quest-sample label by common themes or topics.
 
 Examples of themes:
 - Copilot for Fabric content gaps
@@ -222,7 +223,7 @@ This helps identify if we should focus on specific areas rather than tackling is
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Find duplicate and closely related issues in the backlog.
+@github Find duplicate and closely related issues in the backlog.
 
 Look for:
 
@@ -286,7 +287,7 @@ For each set of related issues:
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Identify issues that are incomplete or vague and need more information before they can be worked on.
+@github Identify issues that are incomplete or vague and need more information before they can be worked on.
 
 Flag issues that are missing:
 1. Clear problem description (what's wrong?)
@@ -318,7 +319,7 @@ For each flagged issue:
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Based on all the categorization and analysis, create an action plan for tackling this backlog.
+@github Based on all the categorization and analysis, create an action plan for tackling this backlog.
 
 Provide a prioritized plan:
 
@@ -361,7 +362,7 @@ For each phase, provide:
 **GitHub Copilot Chat Prompt:**
 
 ```
-@workspace Based on the issues analyzed, recommend a labeling system for this repository.
+@github Based on the issues analyzed, recommend a labeling system for this repository.
 
 Suggest:
 
@@ -407,8 +408,8 @@ Your `issue-analysis.md` should include:
 
 **Analyst:** [Your Name]
 **Date:** [Date]
-**Analyzed with:** GitHub Copilot @workspace
-**Total Issues:** 27
+**Analyzed with:** GitHub Copilot @github
+**Total Issues:** 12
 
 ---
 
@@ -452,7 +453,7 @@ Your `issue-analysis.md` should include:
 | #17 | Docs site returning 404 | bug | P0 | XS | bug, P0-critical, docs |
 | #5 | Add Python 3.11 support | feature | P1 | M | feature, P1-high, compatibility |
 | #9 | Error messages not helpful | enhancement | P1 | L | enhancement, P1-high, UX |
-[Continue for all 27 issues]
+[Continue for all issues]
 
 ### Priority Distribution
 
@@ -723,13 +724,13 @@ gh issue edit 3 --add-label "bug,P0-critical,installer,windows"
 # Issue #17
 gh issue edit 17 --add-label "bug,P0-critical,docs"
 
-[Continue for all 27 issues]
+[Continue for all issues]
 ```
 
 ### Before/After View
 
 **Before:**
-- 27 unlabeled issues
+- Unlabeled issues
 - No clear priorities
 - Can't filter or organize
 - Overwhelming to look at
@@ -811,14 +812,14 @@ gh issue edit 17 --add-label "bug,P0-critical,docs"
 
 ## Copilot Queries Used
 
-Most helpful @workspace queries:
+Most helpful queries:
 
-1. `@workspace Analyze all 27 issues and categorize by type, priority, and effort`
-2. `@workspace Find duplicate or related issues in the backlog`
-3. `@workspace Group issues by common themes`
-4. `@workspace Identify quick wins - low effort, high value issues`
-5. `@workspace Which issues are incomplete and need more info?`
-6. `@workspace Create a prioritized action plan for the backlog`
+1. `@github Analyze all issues with quest-sample label and categorize by type, priority, and effort`
+2. `@github Find duplicate or related issues in the backlog`
+3. `@github Group issues by common themes`
+4. `@github Identify quick wins - low effort, high value issues`
+5. `@github Which issues are incomplete and need more info?`
+6. `@github Create a prioritized action plan for the backlog`
 
 ---
 
@@ -831,10 +832,10 @@ Most helpful @workspace queries:
 
 ### Bulk Analysis
 
-**Use @workspace for analyzing many items:**
+**Use @github for analyzing many items:**
 
 ```
-@workspace Analyze all 27 issues...
+@github Analyze all issues with the quest-sample label...
 ```
 
 This is much faster than asking about issues one by one.
@@ -842,23 +843,23 @@ This is much faster than asking about issues one by one.
 ### Ask for Patterns
 
 ```
-@workspace What patterns do you see across these issues?
-@workspace What themes emerge?
-@workspace What's the root cause appearing in multiple issues?
+@github What patterns do you see across these issues?
+@github What themes emerge?
+@github What's the root cause appearing in multiple issues?
 ```
 
 ### Get Specific Recommendations
 
 ```
-@workspace Which of these should I work on first and why?
-@workspace Which can be automated?
-@workspace Which should be closed?
+@github Which of these should I work on first and why?
+@github Which can be automated?
+@github Which should be closed?
 ```
 
 ### Use for Bulk Operations
 
 ```
-@workspace Generate GitHub CLI commands to label all issues appropriately
+@github Generate GitHub CLI commands to label all issues appropriately
 ```
 
 ---
@@ -867,7 +868,7 @@ This is much faster than asking about issues one by one.
 
 You've completed this task when you:
 
-- ✅ Analyzed all 27 issues with Copilot
+- ✅ Analyzed all issues with Copilot
 - ✅ Categorized each by type, priority, and effort
 - ✅ Identified quick wins for immediate action
 - ✅ Grouped issues by theme
@@ -891,8 +892,8 @@ You've completed this task when you:
 
 ## What's Next?
 
-After categorizing issues, move to **Task 3.2** where you'll use GitHub Copilot to find duplicate and related issues in more detail, and create a plan for consolidation.
+After categorizing issues, move to **Task 2.2** where you'll use GitHub Copilot to find duplicate and related issues in more detail, and create a plan for consolidation.
 
 ---
 
-**Need help?** Check [solutions/solution-3.1-categorize.md](../solutions/solution-3.1-categorize.md) for example Copilot analysis outputs.
+**Ready for the next step?** Continue to [Task 2.2: Find Duplicates and Relationships](task-2.2-duplicates.md).

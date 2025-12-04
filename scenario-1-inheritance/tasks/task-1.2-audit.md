@@ -477,4 +477,4 @@ After completing your audit, you'll use these findings in **Task 1.3** to create
 
 ---
 
-**Need help?** Check [solutions/solution-1.2-audit.md](../solutions/solution-1.2-audit.md) for example Copilot interactions and expected outputs.
+**Ready for the next step?** Continue to [Task 1.3: Generate Audit Report](task-1.3-report.md).

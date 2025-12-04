@@ -481,4 +481,4 @@ After completing your repository map, you'll move to **Task 1.2** where you'll u
 
 ---
 
-**Need the solution?** Check [solutions/solution-1.1-explore.md](../solutions/solution-1.1-explore.md) for example Copilot interactions and outputs.
+**Ready for the next step?** Continue to [Task 1.2: Content Audit](task-1.2-audit.md) to identify issues in the documentation.

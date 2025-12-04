@@ -130,7 +130,7 @@ issue-relationship-mapping:
 Apply this mapping to your issues:
 
 ```
-#issue-relationship-mapping @workspace Map relationships between all quest-sample issues and suggest clustering strategies
+#issue-relationship-mapping @github Map relationships between all quest-sample issues and suggest clustering strategies
 ```
 
 ## Step 4: Automated Consolidation Planning
