@@ -112,7 +112,7 @@ Ready to begin?
 ## Activities for Learning Lab Academy 12/5 Live Session
 
 - [Module 0 - Repo Preparation](module-0-workspace-prep/tasks/task-0.1-intro.md)
-- [Scenario 1: Audit](scenario-1-inheritance/tasks/task-1.2-identify.md)
+- [Scenario 1: Audit](scenario-1-inheritance/tasks/task-1.2-audit.md)
 - [Scenario 1: Agent Analysis](scenario-1-inheritance/tasks/task-1.5-agent-analysis.md)
 - [Scenario 2: Categorize](scenario-2-backlog-battle/tasks/task-2.1-categorize.md)
 - [Scenario 2: Automated Fixes](scenario-2-backlog-battle/tasks/task-2.4-automated-fixes.md)
