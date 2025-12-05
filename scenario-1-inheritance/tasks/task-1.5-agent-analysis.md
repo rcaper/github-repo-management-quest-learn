@@ -215,13 +215,13 @@ Create these documents based on your agent analysis:
 
 ### LLA Live Session
 
-- [Scenario 2: Categorize](scenario-2-backlog-battle/tasks/task-2.1-categorize.md)
-- [Scenario 2: Automated Fixes](scenario-2-backlog-battle/tasks/task-2.4-automated-fixes.md)
+- [Scenario 2: Categorize](/scenario-2-backlog-battle/tasks/task-2.1-categorize.md)
+- [Scenario 2: Automated Fixes](/scenario-2-backlog-battle/tasks/task-2.4-automated-fixes.md)
 
 
 ### Self-paced and want to explore
 
-[Scenario 2: Categorize](scenario-2-backlog-battle/tasks/task-2.1-categorize.md)
+[Scenario 2: Categorize](/scenario-2-backlog-battle/tasks/task-2.1-categorize.md)
 
 ---
 

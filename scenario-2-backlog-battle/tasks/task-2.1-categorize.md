@@ -401,8 +401,7 @@ Format as:
 
 ### LLA Live Session
 
-- [Scenario 2: Automated Fixes](scenario-2-backlog-battle/tasks/task-2.4-automated-fixes.md)
-
+- [Scenario 2: Automated Fixes](task-2.4-automated-fixes.md)
 
 ### Self-paced and want to explore
 

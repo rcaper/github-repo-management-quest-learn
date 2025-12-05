@@ -194,10 +194,10 @@ Notice how:
 
 ### LLA Live Session
 
-- [Scenario 1: Audit](scenario-1-inheritance/tasks/task-1.2-audit.md)
-- [Scenario 1: Agent Analysis](scenario-1-inheritance/tasks/task-1.5-agent-analysis.md)
-- [Scenario 2: Categorize](scenario-2-backlog-battle/tasks/task-2.1-categorize.md)
-- [Scenario 2: Automated Fixes](scenario-2-backlog-battle/tasks/task-2.4-automated-fixes.md)
+- [Scenario 1: Audit](/scenario-1-inheritance/tasks/task-1.2-audit.md)
+- [Scenario 1: Agent Analysis](/scenario-1-inheritance/tasks/task-1.5-agent-analysis.md)
+- [Scenario 2: Categorize](/scenario-2-backlog-battle/tasks/task-2.1-categorize.md)
+- [Scenario 2: Automated Fixes](/scenario-2-backlog-battle/tasks/task-2.4-automated-fixes.md)
 
 
 ### Self-paced and want to explore

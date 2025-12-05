@@ -473,8 +473,12 @@ You've completed this task when you:
 
 ## What's Next?
 
-After completing your audit, you'll use these findings in **Task 1.3** to create an executive report with GitHub Copilot's help, transforming technical findings into actionable business recommendations.
+### LLA Live Session
 
----
+- [Scenario 1: Agent Analysis](/scenario-1-inheritance/tasks/task-1.5-agent-analysis.md)
+- [Scenario 2: Categorize](/scenario-2-backlog-battle/tasks/task-2.1-categorize.md)
+- [Scenario 2: Automated Fixes](/scenario-2-backlog-battle/tasks/task-2.4-automated-fixes.md)
+
+### Self-paced and want to explore
 
 **Ready for the next step?** Continue to [Task 1.3: Generate Audit Report](task-1.3-report.md).
