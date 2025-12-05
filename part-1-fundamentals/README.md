@@ -126,7 +126,7 @@ Open Copilot Chat (`Ctrl+Shift+I` / `Cmd+Shift+I`) and try:
 ```
 
 ```
-#content-audit @workspace
+#content-audit @workspace Perform a content audit learn-pr/wwl folder
 ```
 
 **Full Task Details:** [module-0-workspace-prep/tasks/task-0.1-intro.md](../module-0-workspace-prep/tasks/task-0.1-intro.md)

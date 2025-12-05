@@ -25,7 +25,7 @@ This could take 2-3 hours manually. GitHub Copilot can compare all issues simult
 
 ## Setup
 
-1. **Have your issue-analysis.md open** from Task 3.1
+1. **Have your issue-analysis.md open** from Task 2.1
 
 2. **Open Copilot Chat:** `Ctrl+Shift+I` (Cmd+Shift+I on Mac)
 

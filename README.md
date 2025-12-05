@@ -29,7 +29,7 @@ By completing this quest, you will:
 
 ## Quest Structure
 
-This quest uses **real Microsoft Learn modules** from the `learn-pr/wwl/` folder and contains a foundational module plus four progressive scenarios:
+This quest uses **real Microsoft Learn modules** in the `learn-pr/wwl/` folder and contains a foundational module plus four progressive scenarios:
 
 - **Module 0: Workspace Preparation** - Customize your GitHub Copilot workspace with agents and reusable prompts using examples from Microsoft Learn documentation.
 - **Scenario 1: The Inheritance** - Take over an unfamiliar Microsoft Fabric documentation repository. Use Copilot to explore the module structure, identify issues, and create an improvement plan.
@@ -49,9 +49,14 @@ This quest uses **real Microsoft Learn modules** from the `learn-pr/wwl/` folder
 ### Setup Requirements
 
 1. **Install VS Code** - Download from https://code.visualstudio.com/
-2. **Install GitHub Copilot extension** - From VS Code marketplace
-3. **Activate GitHub Copilot** - Sign in with your GitHub account
-4. **GitHub account** - Required for forking and running workflows
+2. **Install GitHub Copilot extensions** - Install GitHub Copilot *and* Copilot Chat (2 extensions)
+    - https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
+    - https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat
+1. **Activate GitHub Copilot** - Sign in with your GitHub account and link your account with your GitHub enterprise license: https://copilot.github.microsoft.com/
+Add two MCP servers in the GitHub Copilot extension - - https://code.visualstudio.com/mcp
+    - [GitHub]GitHub
+    - [Microsoft.docs.mcp]Microsoft.docs.mcp
+1. **GitHub account** - Required for forking and running workflows
 
 ### Repository Setup
 
@@ -100,22 +105,17 @@ This quest uses **real Microsoft Learn modules** from the `learn-pr/wwl/` folder
    - Check the **Issues** tab - you should see sample issues labeled "quest-sample"
    - Check the **Pull requests** tab - you should see 1 sample PR labeled "quest-sample"
 
-## Time Commitment
-
-- **Part 1 (Fundamentals)**: ~60 minutes
-- **Part 2 (Advanced)**: ~60 minutes
-- **Complete quest**: ~2 hours total
-- **Self-paced**: Complete parts independently on your own schedule
-- **Requires**: Active VS Code session with GitHub Copilot
-
 ## Next Steps
 
-Ready to begin? Choose your starting point:
+Ready to begin?
 
-- [Scenario 1: The Inheritance](scenario-1-inheritance/README.md)
-- [Scenario 2: The Backlog Battle](scenario-2-backlog-battle/README.md)
-- [Scenario 3: The Big Merge](scenario-3-big-merge/README.md)
-- [Scenario 4: The Agent Arsenal](scenario-4-agent-arsenal/README.md)
+## Activities for Learning Lab Academy 12/5 Live Session
+
+- [Module 0 - Repo Preparation](module-0-workspace-prep/tasks/task-0.1-intro.md)
+- [Scenario 1: Audit](scenario-1-inheritance/tasks/task-1.2-identify.md)
+- [Scenario 1: Agent Analysis](scenario-1-inheritance/tasks/task-1.5-agent-analysis.md)
+- [Scenario 2: Categorize](scenario-2-backlog-battle/tasks/task-2.1-categorize.md)
+- [Scenario 2: Automated Fixes](scenario-2-backlog-battle/tasks/task-2.4-automated-fixes.md)
 
 ---
 
