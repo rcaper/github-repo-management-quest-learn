@@ -397,10 +397,13 @@ Format as:
 
 **Deliverable:** Add "Label System Recommendations" section
 
-## What's Next?
+## Next Steps
 
-After categorizing issues, move to **Task 2.2** where you'll use GitHub Copilot to find duplicate and related issues in more detail, and create a plan for consolidation.
+### LLA Live Session
 
----
+- [Scenario 2: Automated Fixes](scenario-2-backlog-battle/tasks/task-2.4-automated-fixes.md)
+
+
+### Self-paced and want to explore
 
 **Ready for the next step?** Continue to [Task 2.2: Find Duplicates and Relationships](task-2.2-duplicates.md).

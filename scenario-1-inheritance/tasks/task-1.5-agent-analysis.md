@@ -213,12 +213,15 @@ Create these documents based on your agent analysis:
 
 ## Next Steps
 
-With your advanced content analysis complete, you're ready to:
-- **Implement quick wins** identified by your agents
-- **Plan strategic improvements** based on comprehensive assessment
-- **Share findings** with stakeholders using executive summary
-- **Refine your agents** based on performance evaluation
-- **Apply patterns** to other repositories in your organization
+### LLA Live Session
+
+- [Scenario 2: Categorize](scenario-2-backlog-battle/tasks/task-2.1-categorize.md)
+- [Scenario 2: Automated Fixes](scenario-2-backlog-battle/tasks/task-2.4-automated-fixes.md)
+
+
+### Self-paced and want to explore
+
+[Scenario 2: Categorize](scenario-2-backlog-battle/tasks/task-2.1-categorize.md)
 
 ---
 
