@@ -4,6 +4,22 @@
 **Difficulty:** Advanced  
 **Prerequisites:** Module 0 (agent basics), familiarity with `.agent.md` file structure
 
+> **⚠️ Platform Compatibility Note**
+>
+> This task focuses on **VS Code custom agents**. Some features taught here are **VS Code-only** and do not work with GitHub Copilot coding agent on GitHub.com:
+>
+> | Property | VS Code | GitHub.com |
+> |----------|---------|------------|
+> | `model` | ✅ Supported | ❌ Not supported |
+> | `argument-hint` | ✅ Supported | ❌ Not supported |
+> | `handoffs` | ✅ Supported | ❌ Not supported |
+> | `tools` | ✅ Supported | ✅ Supported |
+> | `target` | ✅ Supported | ✅ Supported |
+>
+> For GitHub.com compatibility details, see [Custom agents configuration](https://docs.github.com/en/copilot/reference/custom-agents-configuration).
+>
+> **Reference:** [Custom agents in VS Code](https://code.visualstudio.com/docs/copilot/customization/custom-agents)
+
 ## Objective
 
 Master advanced agent configuration options: **tool permissions**, **model selection**, **target platforms**, and **structured outputs** that enable more powerful and reliable agent behavior.
@@ -16,8 +32,8 @@ In Module 0, you created basic agents with a name, description, and instructions
 
 | Property | Purpose | Example Values |
 |----------|---------|----------------|
-| `tools` | What actions the agent can perform | `["read", "search", "edit", "run"]` |
-| `model` | Which AI model to use (VS Code only) | `gpt-4o`, `claude-sonnet-4-20250514`, `o1` |
+| `tools` | What actions the agent can perform | `['read', 'search', 'edit', 'execute']` |
+| `model` | Which AI model to use (VS Code only) | `Claude Sonnet 4`, `GPT-4o`, `o1` |
 | `target` | Where the agent is available | `vscode`, `github-copilot` |
 
 ---
@@ -33,8 +49,8 @@ Tools control what your agent can actually **do** in the workspace. Without tool
 | `read` | Read files in workspace | Analysis, review, auditing |
 | `search` | Search across files | Finding patterns, references |
 | `edit` | Modify files | Automated fixes, refactoring |
-| `run` | Execute terminal commands | Build, test, deploy tasks |
-| `mcp` | Use MCP server tools | External integrations |
+| `execute` | Execute terminal commands | Build, test, deploy tasks |
+| `server-name/*` | Use MCP server tools | External integrations (e.g., `github/*`) |
 
 ### Exercise: Create a Read-Only Auditor
 
@@ -44,7 +60,7 @@ Create `.github/agents/content-auditor.agent.md`:
 ---
 name: Content Auditor
 description: Analyzes Learn modules for quality issues without making changes
-tools: ["read", "search"]
+tools: ['read', 'search']
 ---
 
 You are a read-only content auditor. You can analyze and search files but CANNOT modify them.
@@ -70,7 +86,7 @@ Create `.github/agents/auto-fixer.agent.md`:
 ---
 name: Auto Fixer
 description: Automatically fixes common documentation issues
-tools: ["read", "search", "edit"]
+tools: ['read', 'search', 'edit']
 ---
 
 You are an automated fixer with permission to edit files. Only fix issues that are:
@@ -113,8 +129,8 @@ Different models excel at different tasks. Use `model:` to match the right model
 
 | Model | Best For | Trade-offs |
 |-------|----------|------------|
-| `gpt-4o` | Fast responses, code generation | Default, good all-around |
-| `claude-sonnet-4-20250514` | Complex analysis, nuanced writing | Excellent reasoning |
+| `GPT-4o` | Fast responses, code generation | Default, good all-around |
+| `Claude Sonnet 4` | Complex analysis, nuanced writing | Excellent reasoning |
 | `o1` | Deep reasoning, complex problems | Slower, more expensive |
 | `o1-mini` | Reasoning with faster response | Good balance |
 
@@ -126,7 +142,7 @@ Create `.github/agents/deep-analyzer.agent.md`:
 ---
 name: Deep Analyzer
 description: Uses advanced reasoning for complex content architecture analysis
-tools: ["read", "search"]
+tools: ['read', 'search']
 model: o1
 ---
 
@@ -154,8 +170,8 @@ Create `.github/agents/quick-check.agent.md`:
 ---
 name: Quick Check
 description: Fast responses for simple validation tasks
-tools: ["read"]
-model: gpt-4o
+tools: ['read']
+model: GPT-4o
 ---
 
 You are optimized for speed. Provide quick, direct answers.
@@ -226,7 +242,7 @@ Create `.github/agents/debug-helper.agent.md`:
 name: Debug Helper
 description: Uses VS Code debugging features for troubleshooting
 target: vscode
-tools: ["read", "search", "run"]
+tools: ['read', 'search', 'execute']
 ---
 
 You are a debugging specialist with access to VS Code terminal.
@@ -257,7 +273,7 @@ Create `.github/agents/structured-auditor.agent.md`:
 ---
 name: Structured Auditor
 description: Outputs audit results in parseable JSON format
-tools: ["read", "search"]
+tools: ['read', 'search']
 ---
 
 You are an auditor that ALWAYS outputs results in valid JSON format.
@@ -319,8 +335,8 @@ Create `.github/agents/enterprise-reviewer.agent.md`:
 ---
 name: Enterprise Reviewer
 description: Full-featured content review agent with all capabilities
-tools: ["read", "search", "edit"]
-model: claude-sonnet-4-20250514
+tools: ['read', 'search', 'edit']
+model: Claude Sonnet 4
 ---
 
 You are an enterprise-grade content reviewer with full capabilities.
@@ -379,10 +395,10 @@ Then provide detailed findings with specific file references.
 
 | Feature | When to Use |
 |---------|-------------|
-| `tools: ["read"]` | Analysis-only, safe exploration |
-| `tools: ["edit"]` | Automated fixes, refactoring |
-| `model: o1` | Complex reasoning, architecture decisions |
-| `model: gpt-4o` | Fast responses, simple tasks |
+| `tools: ['read']` | Analysis-only, safe exploration |
+| `tools: ['edit']` | Automated fixes, refactoring |
+| `model: o1` (VS Code only) | Complex reasoning, architecture decisions |
+| `model: GPT-4o` (VS Code only) | Fast responses, simple tasks |
 | `target: vscode` | Terminal access, debugging |
 | `target: github-copilot` | PR reviews, issue management |
 | Structured output | Automation, reporting, pipelines |

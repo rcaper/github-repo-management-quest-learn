@@ -10,11 +10,11 @@ Learn to extend agent capabilities using **MCP (Model Context Protocol) tools** 
 
 ## Background
 
-In Task 4.1, you configured agents with `tools: ["read", "search", "edit"]` for workspace operations. **MCP tools** go further - they connect agents to external services:
+In Task 4.1, you configured agents with `tools: ['read', 'search', 'edit']` for workspace operations. **MCP tools** go further - they connect agents to external services:
 
 | Tool Type | Scope | Examples |
 |-----------|-------|----------|
-| Built-in tools | Local workspace | `read`, `search`, `edit`, `run` |
+| Built-in tools | Local workspace | `read`, `search`, `edit`, `execute` |
 | **MCP tools** | External services | Documentation APIs, databases, Azure resources |
 
 ---
@@ -74,7 +74,7 @@ Create `.github/agents/docs-researcher.agent.md`:
 ---
 name: Docs Researcher
 description: Researches official Microsoft documentation to answer questions with authoritative sources
-tools: ["read", "search", "mcp"]
+tools: ['read', 'search', 'microsoft-docs/*']
 ---
 
 You are a documentation research specialist with access to Microsoft Learn.
@@ -106,7 +106,7 @@ Create `.github/agents/code-validator.agent.md`:
 ---
 name: Code Validator
 description: Validates code examples against official Microsoft samples and documentation
-tools: ["read", "search", "mcp"]
+tools: ['read', 'search', 'microsoft-docs/*']
 ---
 
 You are a code validation specialist with access to official Microsoft code samples.
@@ -238,8 +238,8 @@ Create `.github/agents/verified-auditor.agent.md`:
 ---
 name: Verified Auditor
 description: Audits Learn modules and verifies technical content against current Microsoft documentation
-tools: ["read", "search", "mcp"]
-model: gpt-4o
+tools: ['read', 'search', 'microsoft-docs/*']
+model: GPT-4o
 ---
 
 You are a Learn module auditor with access to both local files and Microsoft documentation.

@@ -66,6 +66,8 @@ Summarize what this PR does and identify high-risk files that need careful revie
 
 **Option B: VS Code with `#pr` Context**
 
+> **Prerequisite:** Install the [GitHub Pull Requests extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) to use `#pr` context in VS Code.
+
 Open the PR in the GitHub Pull Requests panel and use Copilot Chat:
 ```
 #pr Analyze the scope of this PR. What are the high-risk changes and which areas need the most careful review?
