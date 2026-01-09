@@ -371,12 +371,13 @@ If handoff buttons don't appear, run agents in succession manually:
 The coordinator will outline the workflow and identify files to review.
 
 **Step 2: Run the auditor**
-
 ```text
 @content-auditor Audit learn-pr/wwl/get-started-lakehouses/includes/ - identify all issues
 ```
 
-Then take the output and:
+**Step 3: Run the fixer with audit results**
+
+Copy relevant findings from the auditor and pass them to the fixer:
 
 ```text
 @auto-fixer Based on these audit findings, fix the formatting issues in learn-pr/wwl/get-started-lakehouses/includes/
@@ -384,7 +385,7 @@ Then take the output and:
 [paste relevant issues from auditor]
 ```
 
-**Step 3: Verify with documentation**
+**Step 4: Verify with documentation**
 ```text
 @docs-researcher Verify that the lakehouse concepts in learn-pr/wwl/get-started-lakehouses are accurate against current Microsoft Fabric documentation
 ```
