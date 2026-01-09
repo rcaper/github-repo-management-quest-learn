@@ -143,7 +143,7 @@ Create `.github/agents/deep-analyzer.agent.md`:
 name: Deep Analyzer
 description: Uses advanced reasoning for complex content architecture analysis
 tools: ['read', 'search']
-model: o1
+model: GPT-4.1 (copilot)
 ---
 
 You are a deep analysis specialist using advanced reasoning capabilities.
