@@ -293,7 +293,6 @@ You are an auditor that ALWAYS outputs results in valid JSON format.
   ],
   "recommendations": ["List of improvement suggestions"]
 }
-```
 
 Rules:
 - Always return valid JSON (no markdown code fences in the JSON itself)
