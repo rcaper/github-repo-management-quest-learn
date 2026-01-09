@@ -238,6 +238,17 @@ handoffs:
 
 When users complete a chat with this agent, they see a **"Fix These Issues"** button that switches to `@auto-fixer` with the prompt pre-filled.
 
+> **💡 Where Do Handoff Buttons Appear?**
+>
+> Handoff buttons are rendered by **VS Code's Copilot Chat UI** after the agent's response completes. They appear at the bottom of the response as clickable buttons.
+>
+> **Requirements:**
+> - VS Code 1.106 or later
+> - Latest GitHub Copilot extension
+> - Must be in VS Code Copilot Chat (not GitHub.com or other contexts)
+>
+> If you don't see buttons, use **manual agent chaining** (shown in Step 6).
+
 ### Agent Succession Patterns
 
 | Pattern | Description | Example |
@@ -340,15 +351,26 @@ After completing an audit, users will see a **"Fix These Issues"** button that s
 
 ### Test the Agent Chain
 
+Handoff buttons appear automatically in VS Code after an agent responds. If buttons don't appear (older VS Code version or different context), use manual chaining.
+
+**Option A: Using Handoff Buttons (if available)**
+
+1. Run `@workflow-coordinator Run a full content review on learn-pr/wwl/get-started-lakehouses`
+2. After the response, look for buttons at the bottom: **"Run Content Audit"**, **"Fix Issues"**, etc.
+3. Click **"Run Content Audit"** to switch to `@content-auditor` with context
+
+**Option B: Manual Chain Execution**
+
+If handoff buttons don't appear, run agents in succession manually:
+
 **Step 1: Start with the coordinator**
 ```text
 @workflow-coordinator Run a full content review on learn-pr/wwl/get-started-lakehouses
 ```
 
-The coordinator will outline the workflow and begin delegating.
+The coordinator will outline the workflow and identify files to review.
 
-**Step 2: Manual chain execution**
-If handoffs aren't automatic, run agents in succession:
+**Step 2: Run the auditor**
 
 ```text
 @content-auditor Audit learn-pr/wwl/get-started-lakehouses/includes/ - identify all issues
